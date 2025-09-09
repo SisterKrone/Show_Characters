@@ -68,10 +68,26 @@
     color: rgb(5, 5, 4);
 }
 
-#prev{
+#prev {
     left: 20px;
 }
-#next{
+
+#next {
     right: 20px;
 }
 
+@keyframes toActiveArise {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+
+.item.active .title {
+    animation: toActiveArise 0.7s ease-in-out 1;
+}
+
+.item.active img.fruit {
+    animation: toActiveArise 0.9s ease-in-out 1;
+}
