@@ -83,6 +83,11 @@
     }
 }
 
+@keyframes toActiveShow {
+    from {
+        opacity: 0;
+    }
+}
 
 .item.active .title {
     animation: toActiveArise 0.7s ease-in-out 1;
@@ -90,4 +95,21 @@
 
 .item.active img.fruit {
     animation: toActiveArise 0.9s ease-in-out 1;
+}
+
+.item.active .char {
+    animation: toActiveShow 1s ease-in-out 1;
+}
+
+#amoraTitle{
+    
+    color: black;
+}
+
+#amoraChar{
+    z-index: 9;
+}
+#amoraFruit{
+    top: 60%;
+    width: 60%;
 }
